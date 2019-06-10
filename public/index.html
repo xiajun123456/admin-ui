@@ -12,6 +12,32 @@
       <strong>We're sorry but admin-ui doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
     </noscript>
     <div id="app"></div>
+    <script src="./const/server.js"></script>
+    <script
+      src="https://cdn.bootcss.com/vue-router/3.0.1/vue-router.min.js"
+      integrity="sha384-g4QZ3CgAtAdAvMxrn/IlcxAxZxqs+hDd0fcj0GMX8Qf3IfjXu0VBHY8d3sq0UCRV"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      if (!window.VueRouter)
+        document.write(
+          '<script src="./lib/vue-router.min.js"><\/script>'
+        )
+    </script>
+    <script
+      src="https://cdn.bootcss.com/axios/0.18.0/axios.min.js"
+      integrity="sha384-U/+EF1mNzvy5eahP9DeB32duTkAmXrePwnRWtuSh1C/bHHhyR1KZCr/aGZBkctpY"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      if (!window.axios)
+        document.write('<script src="./lib/axios.min.js"><\/script>')
+    </script>
+    <script
+      src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"
+      integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ"
+      crossorigin="anonymous"
+    ></script>
     <!-- built files will be auto injected -->
   </body>
 </html>

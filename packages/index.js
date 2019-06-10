@@ -1,6 +1,7 @@
-import SideMenu from '@/components/SideMenu.vue'
+import Login from '@/components/login/Login.vue'
+import $http from '@/assets/js/http'
 
-const componentList = [SideMenu]
+const componentList = [Login]
 const comment = {
   install: function (Vue) {
     componentList.forEach(component => {
@@ -12,4 +13,4 @@ if (typeof window !== 'undefined' && window.Vue) {
   window.Vue.use(comment)
 }
 export default comment
-export { SideMenu }
+export { Login, $http }
